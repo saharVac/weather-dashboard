@@ -1,0 +1,89 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: aqua;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.city-selection {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.search {
+  float: left;
+}
+
+#city {
+  width: 80%;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.cities {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.city-choice {
+  left: 0;
+  text-align: center;
+  float: left;
+  width: 35%;
+  border: 1px solid black;
+  margin: 10px 5%;
+}
+
+.city-today {
+  margin-top: 30px;
+}
+
+#city-and-date {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.info {
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+#uv-index {
+  padding: 5px;
+  border: 1px solid black;
+  color: white;
+}
+
+.forecast {
+  clear: both;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.forecast h3 {
+  text-align: center;
+}
+
+.card {
+  background-color: rgb(44, 45, 150);
+  color: white;
+  width: 80%;
+  margin: 20px;
+  padding: 15px;
+}
