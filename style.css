@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: aqua;
+  background-color: #ffe2c2;
 }
 
 header h1 {
@@ -49,7 +49,12 @@ header h1 {
   margin: 10px 5%;
 }
 
+.current {
+  background-color: #e3a147;
+}
+
 .city-today {
+  clear: both;
   margin-top: 30px;
 }
 
@@ -64,15 +69,19 @@ header h1 {
   float: left;
 }
 
-#uv-index {
+.uv {
   padding: 5px;
   border: 1px solid black;
   color: white;
 }
 
+.city-today::after {
+  clear: both;
+}
+
 .forecast {
   clear: both;
-  background-color: lightgray;
+  background-color: #8f4528;
   padding: 10px;
 }
 
@@ -81,9 +90,19 @@ header h1 {
 }
 
 .card {
-  background-color: rgb(44, 45, 150);
+  background-color: #182e4c;
   color: white;
   width: 80%;
   margin: 20px;
   padding: 15px;
+}
+
+.card i,
+.info-group {
+  float: left;
+  margin: 25px;
+}
+
+.info-group {
+  margin-right: 50%;
 }
