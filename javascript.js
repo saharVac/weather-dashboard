@@ -38,7 +38,7 @@ function colorUV(val) {
 }
 
 function renderInfo() {
-  console.log(cityName);
+  console.log(e);
   // assign city name
   $("#city-name").text(cityName);
   // assign date
@@ -54,6 +54,9 @@ function renderInfo() {
     url: queryURL,
     method: "GET",
   }).then(function (response) {
+
+    console.log("Response: ", response)
+
     // assign weather icon
     var image = $("<img>");
     var source =
