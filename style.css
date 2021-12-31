@@ -104,10 +104,15 @@ header h1 {
 
 .card img,
 .info-group {
-  float: left;
   margin: 25px;
 }
 
+.card img {
+  float: left;
+  margin-right: 0;
+}
+
 .info-group {
-  margin-right: 50%;
+  float: right;
+  margin-left: 0;
 }
