@@ -69,7 +69,7 @@ function renderInfo() {
     image.css("margin", "auto");
     $(".city-today").prepend(image);
     // assign temperature
-    $("#temp").text(response.main.temp);
+    $("#temp").text(response.main.temp + ' F');
     // assign Humidity
     $("#humidity").text(response.main.humidity);
     // assign Wind Speed
@@ -129,7 +129,7 @@ function renderInfo() {
         "http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
       $("#img-" + i).attr("src", source);
       // add temperature
-      $("#temp-" + i).text(day.main.temp);
+      $("#temp-" + i).text(day.main.temp + ' F');
       // add humidity
       $("#humidity-" + i).text(day.main.humidity);
     }
