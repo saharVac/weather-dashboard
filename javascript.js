@@ -1,3 +1,7 @@
+// TODO: Clarify icons with icon names
+// TODO: Center Cards
+// TODO: Arrange card text to the right of the icons
+
 var queryURL;
 var latitude;
 var longitude;
@@ -38,7 +42,6 @@ function colorUV(val) {
 }
 
 function renderInfo() {
-  console.log(e);
   // assign city name
   $("#city-name").text(cityName);
   // assign date
