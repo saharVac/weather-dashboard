@@ -51,6 +51,7 @@ function renderInfo() {
     cityName +
     "&units=imperial&appid=" +
     APIKey;
+
   $.ajax({
     url: queryURL,
     method: "GET",
@@ -124,6 +125,9 @@ function renderInfo() {
     url: queryURL,
     method: "GET",
   }).then(function (response) {
+
+    console.log(response)
+
     // iterate over next 5 days
     for (let i = 1; i <= 5; i++) {
       // daily weather object
