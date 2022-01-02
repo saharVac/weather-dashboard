@@ -1,4 +1,6 @@
 // TODO: Clarify icons with icon names
+// TODO: Make cards render dynamically
+// TODO: Make dates align between today date and first cards (currently a 2 day difference)
 
 var queryURL;
 var latitude;
@@ -132,18 +134,32 @@ function renderInfo() {
 
     // iterate over next 5 days
     for (let i = 1; i <= 5; i++) {
+
       // daily weather object
       var day = response.list[7 + (i - 1) * 8];
+
       // add date
       $("#date-" + i).text(day.dt_txt.substring(0, 10));
+
       // add icon
       var source =
         "https://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
       $("#img-" + i).attr("src", source);
+
+
+  
+      $(".day-" + i + "-icon-description").html(day.weather[0].description)
+
+
+
+
+      
       // add temperature
       $("#temp-" + i).text(day.main.temp + ' F');
+      
       // add humidity
       $("#humidity-" + i).text(day.main.humidity);
+
     }
   });
 }
