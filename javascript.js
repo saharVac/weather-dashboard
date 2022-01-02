@@ -1,4 +1,3 @@
-// TODO: Clarify icons with icon names
 // TODO: Make cards render dynamically
 // TODO: Make dates align between today date and first cards (currently a 2 day difference)
 
@@ -136,7 +135,7 @@ function renderInfo() {
     for (let i = 1; i <= 5; i++) {
 
       // daily weather object
-      var day = response.list[7 + (i - 1) * 8];
+      var day = response.list[(i - 1) * 8];
 
       // add date
       $("#date-" + i).text(day.dt_txt.substring(0, 10));
@@ -150,7 +149,7 @@ function renderInfo() {
   
       $(".day-" + i + "-icon-description").html(day.weather[0].description)
 
-
+ 
 
 
       
