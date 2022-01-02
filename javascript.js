@@ -40,6 +40,7 @@ function colorUV(val) {
 }
 
 function renderInfo() {
+
   // assign city name
   $("#city-name").text(cityName);
   // assign date
@@ -47,7 +48,7 @@ function renderInfo() {
 
   // CURRENT weather
   queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     cityName +
     "&units=imperial&appid=" +
     APIKey;
@@ -62,7 +63,7 @@ function renderInfo() {
     // assign weather icon
     var image = $("<img>");
     var source =
-      "http://openweathermap.org/img/wn/" +
+      "https://openweathermap.org/img/wn/" +
       response.weather[0].icon +
       "@2x.png";
     image.attr("src", source);
@@ -113,6 +114,7 @@ function renderInfo() {
     });
   });
 
+
   // 5 DAY forecat
   var queryURL =
     "https://api.openweathermap.org/data/2.5/forecast?q=" +
@@ -136,7 +138,7 @@ function renderInfo() {
       $("#date-" + i).text(day.dt_txt.substring(0, 10));
       // add icon
       var source =
-        "http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
+        "https://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
       $("#img-" + i).attr("src", source);
       // add temperature
       $("#temp-" + i).text(day.main.temp + ' F');
