@@ -63,6 +63,11 @@ header h1 {
   margin-top: 30px;
 }
 
+.today-icon-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 #city-and-date {
   text-align: center;
   margin-top: 40px;

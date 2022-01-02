@@ -67,7 +67,13 @@ function renderInfo() {
     image.attr("src", source);
     image.css("display", "block");
     image.css("margin", "auto");
-    $(".city-today").prepend(image);
+    $(".city-today").prepend($("<div class='today-icon'>"));
+    $(".today-icon").prepend(image);
+    // icon description
+    var iconDescription = $("<p class='today-icon-description'>")
+    iconDescription.html(response.weather[0].description)
+    iconDescription.css("text-align", "center")
+    $(".today-icon").prepend(iconDescription);
     // assign temperature
     $("#temp").text(response.main.temp + ' F');
     // assign Humidity
