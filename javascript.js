@@ -1,5 +1,4 @@
 // TODO: Make cards render dynamically
-// TODO: Make dates align between today date and first cards (currently a 2 day difference)
 
 var queryURL;
 var latitude;

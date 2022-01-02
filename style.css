@@ -110,7 +110,7 @@ header h1 {
 
 .day-icon {
   float: left;
-  margin-right: 0;
+  margin: 20px 30px 0 5px;
 }
 
 .day-icon-description {
@@ -130,4 +130,5 @@ header h1 {
 .info-group {
   float: right;
   margin-left: 0;
+  margin-right: 5px;
 }
